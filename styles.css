@@ -1,0 +1,29 @@
+/* yerba mate andina */
+:root{
+    --verde-oscuro: #1A3C27;
+    --verde-medio: #2a5c3f;
+    --beige-fondo: #f5f1e8;
+    --beige-seccion: #ede7d8;
+    --kraft-oscuro:#bfa88a;
+    --kraft:#d9c5a0;
+    --texto:#2b2b2b;
+}
+body{
+    font-family: Impact, sans-serif;
+    background-color: var(--beige-fondo);
+    color: var(--texto);
+}
+.barra-navegacion ul{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+}
+h1,h2,h3,h4,.font-serif{
+    font-family: merriweather, serif;
+    color: var(--verde-oscuro);
+}
+header{
+    background-color: var(--beige-fondo) !important;
+    border-bottom: 1px solid var(--kraft);
+}
