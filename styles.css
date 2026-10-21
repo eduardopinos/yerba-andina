@@ -13,11 +13,44 @@ body{
     background-color: var(--beige-fondo);
     color: var(--texto);
 }
-.barra-navegacion ul{
-display: flex;
-justify-content: space-between;
+.navegador-links{
+display: grid;
+grid-template-columns: 200px 1fr 200px;
 align-items: center;
-gap: 20px;
+background: #f2eee5;
+padding: 15px 30px;
+border-bottom: 2px solid;
+
+
+
+
+}
+.navegador-links a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+.navegador-links a.active {
+    color: #2d4a3e;
+    font-weight: 700;
+    border-bottom: 3px solid #2d4a3e;
+}
+.logo-yerba-andina{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #2d4a3e;
+    font-weight: 900;
+    line-height: 0.9;
+    font-size: 18px;
+}
+.logo-yerba-andina img{
+    width: 90px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 6px;
 }
 h1,h2,h3,h4,.font-serif{
     font-family: merriweather, serif;
