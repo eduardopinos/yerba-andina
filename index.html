@@ -6,24 +6,25 @@
     <link rel="stylesheet" href="styles.css">
     <title> Yerba Andina - Yerba mate Argentina</title>
 </head>
+<body>
+    
+
 <header class="encabezado-de-pagina">
  <!-- navbar barra de navegacion-->
         
-            <div class="logo-yerba-andina">
-                
-             <img src="./imagen/logo-yerba-andina.png" alt="logo-de-yerba-andina">
-             </div>
-             
-             <nav class="navegador-links">
-                <a href="index.html" class="active">Inicio</a>
-                <a href="#">tienda</a>
-                <a href="#">nosotros</a>
-                <a href="pages/contacto.html">contacto</a>
-
-             </nav>
             
-        
-
+            <nav>
+                    <div class="logo-yerba-andina">
+                    <img src="./imagen/logo-yerba-andina.png" alt="logo-de-yerba-andina">
+                   </div>
+             
+              <ul class="navegador-links">
+                <li> <a href="index.html" class="active">Inicio</a></li>
+                <li> <a href="#productos">tienda</a></li>
+                <li> <a href="#nosotros">nosotros</a></li>
+                <li> <a href="pages/contacto.html">contacto</a></li>
+              </ul>
+            </nav>
 </header>
 <body>
    
@@ -32,7 +33,7 @@
     <main>
         <!--presentacion-->
         
-         <section class="presentacion">
+         <section id="nosotros" class="presentacion">
           <div class="presentacion-texto"> 
             <h1>YERBA MATE ARGENTINA</h1>
             <p><h2>Tradicion, sabor y naturaleza...</h2></p>
@@ -48,7 +49,7 @@
             </div>
         </section>
         <!--lista de precios-->
-        <section class="tienda">
+        <section id="tienda" class="tienda">
             <h2Productos destacados</h2>
             <p>Descubri nuestra seleccion de yerbas artesanales, organicas y con hierbas..-</p>
             <button>Todos</button>
@@ -57,7 +58,7 @@
             <button>Barbacua</button>
             <button>Suave</button>
             <!--seccion de productos-->
-            <section class="productos">
+            <section id="productos" class="productos">
                 <div class="producto">
                  <img src="imagen/yerba-organica-500g.jpg" alt="paquete de yerba organica">
                   <h3>Yerba organica 500g</h3>
@@ -89,11 +90,16 @@
                     <button>Agregar al carrito</button>
                  </div>
                 </section>
-                
-            <h5> yerba mate andina . Productos 100% originales . Desde 2018 . Misiones, Argentina</h5>
-        
             
         
     </main>
+    <footer class="frase-final">
+        <span>
+         yerba mate andina . Productos 100% originales . Desde 2018 . Misiones, Argentina
+        </span>
+           
+        
+    </footer>
+    </body>
    
 </html>

@@ -8,45 +8,63 @@
     --kraft:#d9c5a0;
     --texto:#2b2b2b;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: Impact, sans-serif;
     background-color: var(--beige-fondo);
     color: var(--texto);
+    padding-top: 80;
+    margin: 0;
+    padding-top: 75px;
+    height: 200vh;
 }
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 100px;
+}
+
 .encabezado-de-pagina{
+    position: fixed;
+    top: o;
+    left: 0;
+    width: 100%;
+    background: #f6f1e7;
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 15px 20px;
- border-bottom: 2px solid;
- flex-wrap: wrap;
+ padding: 0 30px;
+ z-index: 9999;
+ border-bottom: 1px solid #2f4a3a;
 }
+section{
+    scroll-margin-top: 85px;}
 .navegador-links{
 display: flex;
-gap: 25px;
+gap: 20px;
 justify-content: center;
 justify-content: space-between;
 align-items: center;
 background: #f2eee5;
-padding: 15px 20px;
-border-bottom: 2px solid;
-flex-wrap: wrap;
 
 }
 .navegador-links a {
     text-decoration: none;
-    color: #4a4a4a;
+    color: #2a5c3f;
     font-weight: 500;
     padding-bottom: 4px;
 }
 .navegador-links a.active {
     color: #2d4a3e;
     font-weight: 500;
-    border-bottom: 3px solid #2d4a3e;
+    border-bottom: 3px solid #424a2dc1;
 }
 .logo-yerba-andina{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 5px;
     text-decoration: none;
     color: #2d4a3e;
@@ -131,5 +149,10 @@ width: 100%;
     }
     .producto img {
         height: 180px;
+    }
+    .ultima-frase {
+     width: 100%;
+     display: flex;
+     justify-content: center;
     }
 }
